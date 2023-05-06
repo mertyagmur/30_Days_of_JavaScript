@@ -1,3 +1,5 @@
+//////// LEVEL 1
+
 // 1
 const emptyArr = []
 
@@ -58,4 +60,58 @@ console.log(
     : "company is not found"
 )
 
-// 14
+// 14 ??
+
+// 15
+//console.log(itCompanies.sort())
+
+// 16
+//console.log(itCompanies.reverse())
+
+// 17
+console.log(itCompanies.slice(0, 3))
+
+// 18
+console.log(itCompanies.slice(-3, itCompanies.length))
+
+// 19
+itCompanies.length % 2 == 0
+    ? console.log(itCompanies.slice(itCompanies.length / 2) - 1, (itCompanies.length / 2) + 1)
+    : console.log(itCompanies[(Math.round(itCompanies.length / 2)) - 1])
+
+// 20
+//itCompanies.shift()
+//console.log(itCompanies)
+
+// 21
+itCompanies.length % 2 == 0
+    ? itCompanies.splice((itCompanies.length / 2) - 1, 2)
+    : itCompanies.splice((Math.round(itCompanies.length / 2)) - 1, 1)
+console.log(itCompanies)
+
+itCompanies.length % 2 == 0
+    ? itCompanies.splice((itCompanies.length / 2) - 1, 2)
+    : itCompanies.splice((Math.round(itCompanies.length / 2)) - 1, 1)
+console.log(itCompanies)
+
+itCompanies.length % 2 == 0
+    ? itCompanies.splice((itCompanies.length / 2) - 1, 2)
+    : itCompanies.splice((Math.round(itCompanies.length / 2)) - 1, 1)
+console.log(itCompanies)
+
+itCompanies.length % 2 == 0
+    ? itCompanies.splice((itCompanies.length / 2) - 1, 2)
+    : itCompanies.splice((Math.round(itCompanies.length / 2)) - 1, 1)
+console.log(itCompanies)
+
+// 22
+// itCompanies.pop()
+// console.log(itCompanies)
+
+// 23
+// itCompanies.splice(0, itCompanies.length)
+// console.log(itCompanies)
+
+
+
+//////////// LEVEL 2
