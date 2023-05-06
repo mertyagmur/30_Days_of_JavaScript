@@ -115,3 +115,74 @@ console.log(itCompanies)
 
 
 //////////// LEVEL 2
+
+// 1
+import {countries} from "./countries.js"
+import {webTechs} from "./web_techs.js"
+console.log(countries)
+console.log(webTechs)
+
+// 2
+let text = 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
+text = text.replace(/[.,]/gi, "")
+let words = text.split(" ")
+console.log(words)
+console.log(words.length)
+
+// 3
+const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
+console.log(`Original cart: ${shoppingCart}`)
+if (!shoppingCart.includes("Meat")) {
+    shoppingCart.unshift("Meat")
+}
+console.log(`Meat added to beginning: ${shoppingCart}`)
+
+if (!shoppingCart.includes("Sugar")) {
+    shoppingCart.push("Sugar")
+}
+console.log(`Sugar added to the end: ${shoppingCart}`)
+
+let isAllergic = true
+if (isAllergic) {
+    shoppingCart.splice(shoppingCart.indexOf("Honey"), 1)
+}
+console.log(`Honey removed: ${shoppingCart}`)
+
+shoppingCart[shoppingCart.indexOf("Tea")] = "Green Tea"
+console.log(`Tea -> Green Tea: ${shoppingCart}`)
+
+// 4
+if (countries.includes("Ethiopia")) {
+    console.log("ETHIOPIA")
+} else {
+    countries.push("Ethiopia")
+}
+
+// 5
+if (webTechs.includes("Sass")) {
+    console.log("Sass is a CSS preprocess")
+} else {
+    webTechs.push("Sass")
+    console.log(webTechs)
+}
+
+// 6
+const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+const backEnd = ['Node','Express', 'MongoDB']
+
+let fullStack = frontEnd.concat(backEnd)
+console.log(fullStack)
+
+/////////////// LEVEL 3
+let ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+// ages = ages.sort()
+// console.log(`Min: ${Math.min(...ages)}`)
+// console.log(`Max: ${Math.max(...ages)}`)
+
+ages.length % 2 == 0
+    ? console.log(`Median: ${(ages[(ages.length / 2) - 1] + ages[(ages.length / 2)]) / 2}`)
+    : console.log(`Median: ${ages[Math.round(ages.length / 2) - 1]}`)
+
+const average = ages.reduce((a, b) => a + b, 0) / ages.length
+console.log(`Average: ${average}`)
+console.log(`Range: ${(Math.max(...ages)) - (Math.min(...ages))}`)
